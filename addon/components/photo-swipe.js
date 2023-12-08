@@ -142,6 +142,7 @@ export default class PhotoSwipeComponent extends Component {
     super.willDestroy(...arguments);
     if (this.pswp) {
       this.pswp.close();
+      this.pswp.destroy();
       this.pswp = null;
     }
   }
